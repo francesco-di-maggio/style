@@ -44,6 +44,7 @@ A change that keeps every site intact goes into `v1`. A change that would break 
 - **Share images.** 1200×630, dark: the mark top left, a 96 px headline, one dim mono line.
 - **Text.** Lean and factual. Short declarative sentences, exact values, one fact in one place.
 - **Names.** Each name keeps its real spelling in text: TSOST and TESI (acronyms), modulo and mqtt-max (package names). Capitals come from the label style (marks, nav, labels). In tabs, a tool's name is written as its header shows it: MQTT-MAX, and MODULO if it gets its own site.
+- **Headings.** Title Case: page titles and section headings alike (Modes of Listening, Get Started). Articles, short conjunctions and short prepositions stay lowercase unless first or last (a, and, of, to, with), also inside hyphenated words (Time-of-Flight). Names keep their own spelling (ESP32, Wi-Fi, mqtt-max). Labels are capitals by style.
 - **Full stops.** Sentences end with one: leads, summaries, captions, hints. Fragments do not: metadata lines (authors, venue · type, date · focus), labels, titles.
 - **Grey.** `--dim` is #6d6d6a on light, #828288 on dark (WCAG AA).
 
