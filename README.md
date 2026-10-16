@@ -25,6 +25,8 @@ Load the tokens, then the base, then the site's own styles:
 | `v1/tokens.css` | Colours, fonts, radii, light and dark |
 | `v1/base.css` | Page, header, mark, nav, type, panels, lists, facts, prose, code, tables, search, controls, footer |
 
+The mqtt-max Remote is the exception: it stays one self-contained file, so it can be opened locally or shipped with the Max package. It follows the same tokens by hand.
+
 A change that keeps every site intact goes into `v1`. A change that would break a site goes into `v2`, and each site moves when ready.
 
 ## Shared
