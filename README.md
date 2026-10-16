@@ -42,6 +42,7 @@ A change that keeps every site intact goes into `v1`. A change that would break 
 - **Footer.** `© year Francesco Di Maggio` on the left, linking to the personal site; email, GitHub and LinkedIn on the right.
 - **Share images.** 1200×630, dark: the mark top left, a 96 px headline, one dim mono line.
 - **Text.** Lean and factual. Short declarative sentences, exact values, one fact in one place.
+- **Full stops.** Sentences end with one: leads, summaries, captions, hints. Fragments do not: metadata lines (authors, venue · type, date · focus), labels, titles.
 - **Grey.** `--dim` is #6d6d6a on light, #828288 on dark (WCAG AA).
 
 ## Licence
