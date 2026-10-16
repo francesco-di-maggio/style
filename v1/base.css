@@ -96,6 +96,12 @@ a.primary:hover { border-color: var(--ink); }
 .prose.body { margin-top: 10px; }
 .caption { display: block; font-size: 15px; line-height: 20px; color: var(--dim); }
 .arrow { font: 400 18px/20px var(--mono); color: var(--dim); }
+/* Previous and next at the foot of an item: two columns, no panel. */
+.pager { display: flex; justify-content: space-between; gap: 16px; margin-top: min(16px, 2vh); }
+.pager a { display: flex; flex-direction: column; gap: 4px; max-width: 48%; text-decoration: none; }
+.pager a:last-child { margin-left: auto; text-align: right; }
+.pager b { font-size: 15px; line-height: 20px; font-weight: 600; }
+.pager a:hover b { text-decoration: underline; text-decoration-color: var(--dim); text-underline-offset: 3px; }
 /* Lists: one row per item inside a panel. Title and short lines on the left; on the right a value, or → without one. */
 .list { margin: 0; padding: 0; list-style: none; }
 .list li + li { border-top: 1px solid var(--line); }
