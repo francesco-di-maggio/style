@@ -90,8 +90,8 @@ a.panel.on .label::before { content: ""; display: inline-block; width: 6px; heig
 a.panel .title { display: block; margin: 4px 0; font-size: 16px; line-height: 22px; font-weight: 600; }
 /* Filled: the one main thing to do on a page (open the Remote, download a tool). */
 .primary { background: var(--ink); border-color: var(--ink); }
-.primary .label, a.primary .title, a.primary .arrow { color: var(--bg); }
-.primary .caption { color: var(--bg); opacity: 0.7; }
+a.primary .label, a.primary .title, a.primary .arrow, a.primary:hover .arrow { color: var(--bg); }
+a.primary .caption { color: var(--bg); opacity: 0.7; }
 a.primary:hover { border-color: var(--ink); }
 .prose.body { margin-top: 10px; }
 .caption { display: block; font-size: 15px; line-height: 20px; color: var(--dim); }
