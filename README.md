@@ -37,6 +37,7 @@ A change that keeps every site intact goes into `v1`. A change that would break 
 - **Accent.** Orange only for what is on: current, connected, now.
 - **Filled.** A filled tile (`a.panel.primary`: label, title, caption, →) only for the one main thing to do on a page: open the Remote, download a tool. Reading pages have none.
 - **Lists.** A row is a bold title with up to two grey lines, and on the right a date, or → when the date is the section label. The whole row is one link. Every list has a label above it.
+- **Item pages.** Title, a one-line lead (the item's summary, also shown under it in lists), facts, then the text. Previous and next at the foot, as the pager.
 - **Dates.** Open ranges `2024–present` with the accent dot in rows, closed `2022–2024`; in facts panels `2024-06 – present`.
 - **Tab titles.** A home is its name; a page is `Page · Site`; a part's page is `Page · Part · Site`.
 - **Footer.** `© year Francesco Di Maggio` on the left, linking to the personal site; email, GitHub and LinkedIn on the right.
