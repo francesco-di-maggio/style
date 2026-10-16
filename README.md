@@ -35,7 +35,7 @@ A change that keeps every site intact goes into `v1`. A change that would break 
 - **Parts.** A part with its own structure keeps the site's mark, adds its name and swaps the nav row for its own tabs: TSOST / COURSE, MQTT-MAX / REMOTE. Where the header is too narrow, the glyph alone leads back.
 - **Nav and icons.** The nav lists sections. Views of the whole (timeline, graph) and tools (search, theme) are icons in the header.
 - **Accent.** Orange only for what is on: current, connected, now.
-- **Filled.** A filled button or panel only for the one main thing to do on a page. Reading pages have none.
+- **Filled.** A filled tile (`a.panel.primary`: label, title, caption, →) only for the one main thing to do on a page: open the Remote, download a tool. Reading pages have none.
 - **Lists.** A row is a bold title with up to two grey lines, and on the right a date, or → when the date is the section label. The whole row is one link. Every list has a label above it.
 - **Dates.** Open ranges `2024–present` with the accent dot in rows, closed `2022–2024`; in facts panels `2024-06 – present`.
 - **Tab titles.** A home is its name; a page is `Page · Site`; a part's page is `Page · Part · Site`.
