@@ -49,16 +49,19 @@ body { position: relative; }
            text-decoration: none; cursor: pointer; }
 .control:active { opacity: 0.7; }
 .control .arrow { font-size: 16px; }
-nav { display: flex; gap: 18px; overflow-x: auto; scrollbar-width: none; margin-bottom: min(24px, 3vh);
-      padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+/* The nav reaches one gap past the column on the left, so the current
+   section's dot can sit in a gap before every name, the first included, and
+   no name ever moves. Its hairline still starts at the column. */
+nav { --gap: 18px; display: flex; gap: var(--gap); overflow-x: auto; scrollbar-width: none; margin: 0 0 min(24px, 3vh) calc(-1 * var(--gap));
+      padding: 0 0 10px var(--gap); background: linear-gradient(var(--line), var(--line)) var(--gap) 100% / calc(100% - var(--gap)) 1px no-repeat; }
 nav::-webkit-scrollbar { display: none; }
 nav a { flex: none; text-decoration: none; }
 nav a:hover, nav a[aria-current] { color: var(--ink); }
 /* The current section: an orange dot before its name */
-nav a[aria-current="page"]::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px; border-radius: 50%; background: var(--accent); vertical-align: 1px; }
+nav a[aria-current="page"]::before { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 calc(var(--gap) / 2 - 3px) 0 calc(var(--gap) / -2 - 3px); border-radius: 50%; background: var(--accent); vertical-align: 1px; }
 nav sup { margin-left: 2px; font-size: 8px; line-height: 0; vertical-align: 5px; color: var(--dim); }
 /* Phones: tighter gaps, left-aligned; spreading three items leaves wide holes. */
-@media (max-width: 480px) { nav { gap: 12px; } }
+@media (max-width: 480px) { nav { --gap: 12px; } }
 h1 { margin: 0 0 4px; font-size: clamp(28px, 7vw, 36px); line-height: 1.15; font-weight: 600; letter-spacing: -0.02em; }
 .lead { margin: 0 0 min(8px, 1vh); font-size: 16px; color: var(--dim); }
 h2.label { margin: min(16px, 2vh) 0 0; }
